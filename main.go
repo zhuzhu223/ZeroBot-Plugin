@@ -165,7 +165,7 @@ func init() {
 	sus := make([]int64, 0, 16)
 	// 解析命令行参数
 	// 输入 `-g 监听地址:端口` 指定 gui 访问地址，默认 127.0.0.1:3000
-	// g := flag.String("g", "127.0.0.1:3000", "Set web gui listening address.")
+	g := flag.String("g", "127.0.0.1:3000", "Set web gui listening address.")
 	d := flag.Bool("d", false, "Enable debug level log and higher.")
 	w := flag.Bool("w", false, "Enable warning level log and higher.")
 	h := flag.Bool("h", false, "Display this help.")
