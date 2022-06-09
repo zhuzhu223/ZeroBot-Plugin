@@ -204,7 +204,7 @@ func init() {
 	}
 
 	// 通过代码写死的方式添加主人账号
-	//sus = append(sus,写上你的QQ号 )
+	// sus = append(sus,写上你的QQ号 )
 	// sus = append(sus, 87654321)
 
 	// 启用 gui
@@ -231,7 +231,7 @@ func init() {
 
 	config.W = []*driver.WSClient{driver.NewWebSocketClient(*url, *token)}
 	config.Z = zero.Config{
-		NickName:      append([]string{*adana}, "这里填入机器人的别名", "多个像这样","bot"),
+		NickName:      append([]string{*adana}, "这里填入机器人的别名", "多个像这样", "bot"),
 		CommandPrefix: *prefix,
 		SuperUsers:    sus,
 		Driver:        []zero.Driver{config.W[0]},
